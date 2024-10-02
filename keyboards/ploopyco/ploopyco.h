@@ -29,6 +29,8 @@ typedef union {
 
 extern keyboard_config_t keyboard_config;
 extern uint16_t          dpi_array[];
+extern uint16_t          dpi_array_size;
+extern bool              is_drag_scroll;
 
 enum ploopy_keycodes {
     DPI_CONFIG = QK_KB_0,

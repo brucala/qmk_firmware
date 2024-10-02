@@ -37,19 +37,19 @@
 
 #ifndef PLOOPY_DPI_OPTIONS
 #    define PLOOPY_DPI_OPTIONS \
-        { 600, 900, 1200, 1600, 2400 }
+        { 600, 900, 1200, 1500 }
 #    ifndef PLOOPY_DPI_DEFAULT
-#        define PLOOPY_DPI_DEFAULT 1
+#        define PLOOPY_DPI_DEFAULT 2
 #    endif
 #endif
 #ifndef PLOOPY_DPI_DEFAULT
 #    define PLOOPY_DPI_DEFAULT 0
 #endif
 #ifndef PLOOPY_DRAGSCROLL_DIVISOR_H
-#    define PLOOPY_DRAGSCROLL_DIVISOR_H 8.0
+#    define PLOOPY_DRAGSCROLL_DIVISOR_H 25.0
 #endif
 #ifndef PLOOPY_DRAGSCROLL_DIVISOR_V
-#    define PLOOPY_DRAGSCROLL_DIVISOR_V 8.0
+#    define PLOOPY_DRAGSCROLL_DIVISOR_V 10.0
 #endif
 #ifndef ENCODER_BUTTON_ROW
 #    define ENCODER_BUTTON_ROW 0
@@ -58,9 +58,13 @@
 #    define ENCODER_BUTTON_COL 0
 #endif
 
+#define PLOOPY_DRAGSCROLL_INVERT
+
 keyboard_config_t keyboard_config;
 uint16_t          dpi_array[] = PLOOPY_DPI_OPTIONS;
+uint16_t dpi_array_size = ARRAY_SIZE(dpi_array);
 #define DPI_OPTION_SIZE ARRAY_SIZE(dpi_array)
+
 
 // Trackball State
 bool  is_scroll_clicked    = false;
