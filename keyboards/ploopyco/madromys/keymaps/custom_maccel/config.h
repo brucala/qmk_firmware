@@ -1,0 +1,3 @@
+//#define MACCEL_USE_KEYCODES
+
+//#define MACCEL_DEBUG

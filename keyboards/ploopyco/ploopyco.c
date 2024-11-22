@@ -37,7 +37,7 @@
 
 #ifndef PLOOPY_DPI_OPTIONS
 #    define PLOOPY_DPI_OPTIONS \
-        { 600, 900, 1200, 1500 }
+        { 600, 900, 1200, 1500, 2400}
 #    ifndef PLOOPY_DPI_DEFAULT
 #        define PLOOPY_DPI_DEFAULT 2
 #    endif
@@ -59,6 +59,7 @@
 #endif
 
 #define PLOOPY_DRAGSCROLL_INVERT
+#define PLOOPY_DRAGSCROLL_MOMENTARY
 
 keyboard_config_t keyboard_config;
 uint16_t          dpi_array[] = PLOOPY_DPI_OPTIONS;
