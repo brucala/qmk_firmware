@@ -87,10 +87,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         TD(MSE_BTN4_DPI),
         TD(MSE_BTN5_ACC),
-        KC_BTN3,
+        DRAG_SCROLL,
         KC_BTN2,
         KC_BTN1,
-        DRAG_SCROLL
+        KC_BTN3
     ),
 };
 
